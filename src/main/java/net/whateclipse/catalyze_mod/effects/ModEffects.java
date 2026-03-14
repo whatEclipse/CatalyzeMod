@@ -15,6 +15,9 @@ public class ModEffects {
     public static final DeferredHolder<MobEffect, BleedingEffect> BLEEDING = MOB_EFFECTS.register("bleeding",
             () -> new BleedingEffect(MobEffectCategory.HARMFUL, 0x8B0000));
 
+    public static final DeferredHolder<MobEffect, BrokenBonesEffect> BROKEN_BONES = MOB_EFFECTS.register("broken_bones",
+            () -> new BrokenBonesEffect(MobEffectCategory.HARMFUL, 0xDEB887));
+
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);
     }

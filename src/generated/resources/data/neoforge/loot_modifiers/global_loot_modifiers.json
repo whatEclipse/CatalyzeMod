@@ -1,0 +1,7 @@
+{
+  "entries": [
+    "catalyze_mod:add_guaranteed_dormant_catalyst_to_portal_chest",
+    "catalyze_mod:add_dormant_catalyst_to_ancient_city"
+  ],
+  "replace": false
+}

@@ -1,0 +1,4 @@
+// 1.21.1	2026-03-14T23:00:19.0712962	Global Loot Modifiers : catalyze_mod
+4a96dcfe456b8cec0efb848b9eb555c125bda7a2 data/catalyze_mod/loot_modifiers/add_dormant_catalyst_to_ancient_city.json
+65b258109f29895b139390b66ab271ff54f099a7 data/catalyze_mod/loot_modifiers/add_guaranteed_dormant_catalyst_to_portal_chest.json
+ed6b82af53dc0705b5454e6358124e515ffa212e data/neoforge/loot_modifiers/global_loot_modifiers.json

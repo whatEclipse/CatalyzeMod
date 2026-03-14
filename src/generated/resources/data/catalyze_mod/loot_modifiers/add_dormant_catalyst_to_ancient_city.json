@@ -1,0 +1,15 @@
+{
+  "type": "catalyze_mod:add_item",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:chests/ancient_city"
+    },
+    {
+      "chance": 0.15,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "count": {},
+  "item": "catalyze_mod:dormant_catalyst"
+}

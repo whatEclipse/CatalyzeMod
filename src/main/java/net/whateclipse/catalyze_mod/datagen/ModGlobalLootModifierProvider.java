@@ -37,8 +37,8 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
                                                 ModItems.DORMANT_CATALYST.get(),
                                                 1));
 
-                // Add dormant catalyst to other ancient city chests with a very rare chance
-                add("add_rare_dormant_catalyst_to_ancient_city",
+                // Add dormant catalyst to other ancient city chests with a 15% chance
+                add("add_dormant_catalyst_to_ancient_city",
                                 new AddItemModifier(
                                                 new LootItemCondition[] {
                                                                 // Only apply to ancient city chest loot table
@@ -46,9 +46,9 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
                                                                                 ResourceLocation.withDefaultNamespace(
                                                                                                 "chests/ancient_city"))
                                                                                 .build(),
-                                                                // Much rarer chance (1%) as requested
+                                                                // 15% chance as requested
                                                                 net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition
-                                                                                .randomChance(0.01f).build()
+                                                                                .randomChance(0.15f).build()
                                                 },
                                                 ModItems.DORMANT_CATALYST.get(),
                                                 1));

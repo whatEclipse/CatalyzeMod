@@ -1,0 +1,11 @@
+{
+  "type": "catalyze_mod:add_item",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:chests/ancient_city_city_center"
+    }
+  ],
+  "count": {},
+  "item": "catalyze_mod:dormant_catalyst"
+}
