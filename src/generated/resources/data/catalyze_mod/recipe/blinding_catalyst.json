@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "!": {
+      "item": "catalyze_mod:dormant_catalyst"
+    },
+    "#": {
+      "item": "minecraft:echo_shard"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#!#",
+    " # "
+  ],
+  "result": {
+    "count": 1,
+    "id": "catalyze_mod:blinding_catalyst"
+  }
+}

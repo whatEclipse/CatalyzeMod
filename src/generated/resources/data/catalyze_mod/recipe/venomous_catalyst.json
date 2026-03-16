@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "!": {
+      "item": "catalyze_mod:dormant_catalyst"
+    },
+    "#": {
+      "item": "minecraft:poisonous_potato"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#!#",
+    " # "
+  ],
+  "result": {
+    "count": 1,
+    "id": "catalyze_mod:venomous_catalyst"
+  }
+}

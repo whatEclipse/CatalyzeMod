@@ -51,6 +51,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
                 addPiercingRecipe(recipeOutput);
                 addHasteRecipes(recipeOutput);
+                addCatalystCraftingRecipes(recipeOutput);
         }
 
         private void addCatalystRecipes(RecipeOutput recipeOutput, net.minecraft.world.item.Item template,
@@ -140,5 +141,47 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
                 recipeOutput.accept(id, recipe, null);
 
+        }
+
+        private void addCatalystCraftingRecipes(RecipeOutput recipeOutput) {
+                // Blazing Catalyst
+                ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BLAZING_CATALYST.get())
+                                .pattern(" # ")
+                                .pattern("#!#")
+                                .pattern(" # ")
+                                .define('#', Items.BLAZE_ROD)
+                                .define('!', ModItems.DORMANT_CATALYST.get())
+                                .unlockedBy("has_dormant_catalyst", has(ModItems.DORMANT_CATALYST.get()))
+                                .save(recipeOutput);
+
+                // Freezing Catalyst
+                ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FREEZING_CATALYST.get())
+                                .pattern(" # ")
+                                .pattern("#!#")
+                                .pattern(" # ")
+                                .define('#', Items.BLUE_ICE)
+                                .define('!', ModItems.DORMANT_CATALYST.get())
+                                .unlockedBy("has_dormant_catalyst", has(ModItems.DORMANT_CATALYST.get()))
+                                .save(recipeOutput);
+
+                // Venomous Catalyst
+                ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.VENOMOUS_CATALYST.get())
+                                .pattern(" # ")
+                                .pattern("#!#")
+                                .pattern(" # ")
+                                .define('#', Items.POISONOUS_POTATO)
+                                .define('!', ModItems.DORMANT_CATALYST.get())
+                                .unlockedBy("has_dormant_catalyst", has(ModItems.DORMANT_CATALYST.get()))
+                                .save(recipeOutput);
+
+                // Blinding Catalyst
+                ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BLINDING_CATALYST.get())
+                                .pattern(" # ")
+                                .pattern("#!#")
+                                .pattern(" # ")
+                                .define('#', Items.ECHO_SHARD)
+                                .define('!', ModItems.DORMANT_CATALYST.get())
+                                .unlockedBy("has_dormant_catalyst", has(ModItems.DORMANT_CATALYST.get()))
+                                .save(recipeOutput);
         }
 }
