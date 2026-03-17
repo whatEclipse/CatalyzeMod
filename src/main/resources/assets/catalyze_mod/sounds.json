@@ -1,0 +1,8 @@
+{
+  "blood_projectile_hit": {
+    "subtitle": "subtitles.catalyze_mod.blood_projectile_hit",
+    "sounds": [
+      "catalyze_mod:blood_projectile_hit"
+    ]
+  }
+}

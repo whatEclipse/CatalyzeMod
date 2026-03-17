@@ -17,12 +17,14 @@ import net.neoforged.neoforge.common.NeoForge;
 
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import net.whateclipse.catalyze_mod.entities.ModEntities;
 import net.whateclipse.catalyze_mod.creativetabs.ModCreativeTabs;
 import net.whateclipse.catalyze_mod.effects.ModEffects;
 import net.whateclipse.catalyze_mod.items.ModItems;
 import net.whateclipse.catalyze_mod.particles.ModParticleTypes;
 import net.whateclipse.catalyze_mod.loot.ModLootModifiers;
 import net.whateclipse.catalyze_mod.recipes.ModRecipes;
+import net.whateclipse.catalyze_mod.sounds.ModSounds;
 import org.slf4j.Logger;
 
 @Mod(Catalyze_mod.MODID)
@@ -39,11 +41,13 @@ public class Catalyze_mod {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModEntities.register(modEventBus);
         ModCreativeTabs.register(modEventBus);
         ModRecipes.register(modEventBus);
         ModEffects.register(modEventBus);
         ModParticleTypes.register(modEventBus);
         ModLootModifiers.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
 
