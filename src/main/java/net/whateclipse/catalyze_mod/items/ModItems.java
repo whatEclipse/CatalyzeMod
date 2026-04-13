@@ -78,6 +78,10 @@ public class ModItems {
         public static final DeferredItem<Item> TOOL_TEMPLATE = ITEMS.register("tool_template",
                         () -> new Item(new Item.Properties()));
 
+        // Debug items
+        public static final DeferredItem<Item> BLOOD_PROJECTILE_DEBUG = ITEMS.register("blood_projectile_debug",
+                        () -> new net.whateclipse.catalyze_mod.items.custom.BloodProjectileDebugItem(new Item.Properties()));
+
         public static void register(IEventBus eventBus) {
                 ITEMS.register(eventBus);
         }

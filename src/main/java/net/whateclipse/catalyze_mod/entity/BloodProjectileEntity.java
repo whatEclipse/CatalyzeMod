@@ -8,6 +8,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.Vec3;
 import net.whateclipse.catalyze_mod.entities.ModEntities;
+import net.whateclipse.catalyze_mod.sounds.ModSounds;
 import javax.annotation.Nonnull;
 
 public class BloodProjectileEntity extends AbstractArrow {
@@ -16,22 +17,36 @@ public class BloodProjectileEntity extends AbstractArrow {
         super(entityType, level);
         this.setBaseDamage(17.33); // Velocity = 0.75, Damage = 13.0 (approx 17.33 * 0.75 = 12.9975)
         this.setNoGravity(true);
+        if (!level.isClientSide) {
+            level.playSound(null, this.getX(), this.getY(), this.getZ(), ModSounds.BLOOD_SPEWING.get(), net.minecraft.sounds.SoundSource.PLAYERS, 1.0F, 1.0F + (level.random.nextFloat() - 0.5f) * 0.2f);
+        }
     }
 
     public BloodProjectileEntity(Level level, LivingEntity shooter, @Nonnull ItemStack pickupItem) {
         super(ModEntities.BLOOD_PROJECTILE.get(), shooter, level, pickupItem, null);
         this.setBaseDamage(17.33);
         this.setNoGravity(true);
+        // Automatically set the movement based on the looking direction of the shooter entity
+        this.shootFromRotation(shooter, shooter.getXRot(), shooter.getYRot(), 0.0F, 0.75F, 0.0F);
+        
+        if (!level.isClientSide) {
+            level.playSound(null, this.getX(), this.getY(), this.getZ(), ModSounds.BLOOD_SPEWING.get(), net.minecraft.sounds.SoundSource.PLAYERS, 1.0F, 1.0F + (level.random.nextFloat() - 0.5f) * 0.2f);
+        }
     }
 
     public BloodProjectileEntity(Level level, double x, double y, double z, @Nonnull ItemStack pickupItem) {
         super(ModEntities.BLOOD_PROJECTILE.get(), x, y, z, level, pickupItem, null);
         this.setBaseDamage(17.33);
         this.setNoGravity(true);
+        
+        if (!level.isClientSide) {
+            level.playSound(null, this.getX(), this.getY(), this.getZ(), ModSounds.BLOOD_SPEWING.get(), net.minecraft.sounds.SoundSource.PLAYERS, 1.0F, 1.0F + (level.random.nextFloat() - 0.5f) * 0.2f);
+        }
     }
 
     @Override
     protected void onHitEntity(@Nonnull EntityHitResult result) {
+        this.playSound(ModSounds.BLOOD_PROJECTILE_HIT.get(), 3.0F, 1.0F);
         super.onHitEntity(result);
         this.discard();
     }
@@ -54,10 +69,30 @@ public class BloodProjectileEntity extends AbstractArrow {
             }
         }
         super.tick();
+        
+        if (this.level().isClientSide && !this.inGround) {
+            // Spawn bubbles randomly behind the trajectory of the projectile
+            if (this.random.nextFloat() < 0.7F) { // Spawn rate
+                Vec3 movement = this.getDeltaMovement();
+                // We position the particle slightly behind the current position
+                double px = this.getX() - movement.x;
+                double py = this.getY() - movement.y + 0.15D; // Adjust center
+                double pz = this.getZ() - movement.z;
+                
+                // Add tiny random offset to make it feel natural
+                px += (this.random.nextDouble() - 0.5) * 0.3;
+                py += (this.random.nextDouble() - 0.5) * 0.3;
+                pz += (this.random.nextDouble() - 0.5) * 0.3;
+                
+                // Spawn the particle
+                this.level().addParticle(net.whateclipse.catalyze_mod.particles.ModParticleTypes.BLOOD_BUBBLE_PARTICLE.get(), px, py, pz, 0.0D, 0.0D, 0.0D);
+            }
+        }
     }
 
     @Override
     protected void onHitBlock(@Nonnull net.minecraft.world.phys.BlockHitResult result) {
+        this.playSound(ModSounds.BLOOD_PROJECTILE_HIT.get(), 3.0F, 1.0F);
         super.onHitBlock(result);
         this.discard();
     }
@@ -74,17 +109,7 @@ public class BloodProjectileEntity extends AbstractArrow {
 
     @Override
     protected net.minecraft.sounds.SoundEvent getDefaultHitGroundSoundEvent() {
-        return null; // Silent on ground hit
-    }
-
-    @Override
-    public void setSoundEvent(@Nonnull net.minecraft.sounds.SoundEvent sound) {
-        // Do nothing to prevent other sounds from being set
-    }
-
-    @Override
-    public void playSound(@Nonnull net.minecraft.sounds.SoundEvent sound, float volume, float pitch) {
-        // Entirely suppress sounds from this entity to ensure it's silent
+        return ModSounds.BLOOD_PROJECTILE_HIT.get();
     }
 
     // Set constant speed if it somehow slows down due to air resistance

@@ -2,7 +2,15 @@
   "blood_projectile_hit": {
     "subtitle": "subtitles.catalyze_mod.blood_projectile_hit",
     "sounds": [
-      "catalyze_mod:blood_projectile_hit"
+      "catalyze_mod:blood_hit"
+    ]
+  },
+  "blood_spewing": {
+    "subtitle": "subtitles.catalyze_mod.blood_spewing",
+    "sounds": [
+      "catalyze_mod:blood_spewing_0",
+      "catalyze_mod:scythe_spewing_1",
+      "catalyze_mod:scythe_spewing_2"
     ]
   }
 }

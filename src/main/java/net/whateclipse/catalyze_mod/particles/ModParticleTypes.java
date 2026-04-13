@@ -14,6 +14,9 @@ public class ModParticleTypes {
 
     public static final DeferredHolder<ParticleType<?>, SimpleParticleType> BLOOD_PARTICLE = PARTICLE_TYPES
             .register("blood_particle", () -> new SimpleParticleType(false));
+            
+    public static final DeferredHolder<ParticleType<?>, SimpleParticleType> BLOOD_BUBBLE_PARTICLE = PARTICLE_TYPES
+            .register("blood_bubble_particle", () -> new SimpleParticleType(false));
 
     public static void register(IEventBus eventBus) {
         PARTICLE_TYPES.register(eventBus);

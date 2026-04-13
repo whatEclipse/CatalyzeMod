@@ -19,6 +19,7 @@ public class ModSounds {
      * 3. Place the .ogg file in src/main/resources/assets/catalyze_mod/sounds/your_sound_name.ogg
      */
     public static final DeferredHolder<SoundEvent, SoundEvent> BLOOD_PROJECTILE_HIT = registerSoundEvent("blood_projectile_hit");
+    public static final DeferredHolder<SoundEvent, SoundEvent> BLOOD_SPEWING = registerSoundEvent("blood_spewing");
 
     private static DeferredHolder<SoundEvent, SoundEvent> registerSoundEvent(String name) {
         @SuppressWarnings("null")

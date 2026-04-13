@@ -183,5 +183,45 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                                 .define('!', ModItems.DORMANT_CATALYST.get())
                                 .unlockedBy("has_dormant_catalyst", has(ModItems.DORMANT_CATALYST.get()))
                                 .save(recipeOutput);
+
+                // Haste Catalyst
+                ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.HASTE_CATALYST.get())
+                                .pattern(" # ")
+                                .pattern("#!#")
+                                .pattern(" # ")
+                                .define('#', Items.GOLDEN_CARROT)
+                                .define('!', ModItems.DORMANT_CATALYST.get())
+                                .unlockedBy("has_dormant_catalyst", has(ModItems.DORMANT_CATALYST.get()))
+                                .save(recipeOutput);
+
+                ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BLOOD_REAPER_CATALYST.get())
+                                .pattern(" # ")
+                                .pattern("-!-")
+                                .pattern(" + ")
+                                .define('-', Items.ROTTEN_FLESH)
+                                .define('!', ModItems.DORMANT_CATALYST.get())
+                                .define('#', Items.IRON_INGOT)
+                                .define('+', Items.RED_DYE)
+                                .unlockedBy("has_dormant_catalyst", has(ModItems.DORMANT_CATALYST.get()))
+                                .save(recipeOutput);
+
+                ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SERRATED_CATALYST.get())
+                                .pattern(" # ")
+                                .pattern("#!#")
+                                .pattern(" # ")
+                                .define('#', Items.ROTTEN_FLESH)
+                                .define('!', ModItems.DORMANT_CATALYST.get())
+                                .unlockedBy("has_dormant_catalyst", has(ModItems.DORMANT_CATALYST.get()))
+                                .save(recipeOutput);
+
+                ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PIERCING_CATALYST.get())
+                                .pattern(" # ")
+                                .pattern("-!-")
+                                .pattern(" # ")
+                                .define('#', Items.PRISMARINE_SHARD)
+                                .define('!', ModItems.DORMANT_CATALYST.get())
+                                .define('-', Items.PRISMARINE_CRYSTALS)
+                                .unlockedBy("has_dormant_catalyst", has(ModItems.DORMANT_CATALYST.get()))
+                                .save(recipeOutput);
         }
 }

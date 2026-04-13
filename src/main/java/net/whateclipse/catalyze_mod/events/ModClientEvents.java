@@ -80,6 +80,7 @@ public class ModClientEvents {
         @SubscribeEvent
         public static void registerParticleProviders(RegisterParticleProvidersEvent event) {
             event.registerSpriteSet(ModParticleTypes.BLOOD_PARTICLE.get(), BloodParticle.Provider::new);
+            event.registerSpriteSet(ModParticleTypes.BLOOD_BUBBLE_PARTICLE.get(), BloodBubbleParticle.Provider::new);
         }
     }
 
@@ -119,6 +120,54 @@ public class ModClientEvents {
                     @Nonnull ClientLevel level,
                     double x, double y, double z, double xSpeed, double ySpeed, double zSpeed) {
                 return new BloodParticle(level, x, y, z, this.sprites, xSpeed, ySpeed, zSpeed);
+            }
+        }
+    }
+
+    public static class BloodBubbleParticle extends TextureSheetParticle {
+        private final SpriteSet sprites;
+
+        protected BloodBubbleParticle(ClientLevel level, double x, double y, double z, SpriteSet sprites, double xSpeed,
+                double ySpeed, double zSpeed) {
+            super(level, x, y, z, xSpeed, ySpeed, zSpeed);
+            this.sprites = sprites;
+            this.xd = xSpeed;
+            this.yd = ySpeed;
+            this.zd = zSpeed;
+            this.friction = 0.96F;
+            this.gravity = 0.0F;
+            this.quadSize = 0.2F + this.random.nextFloat() * 0.15F;
+            this.lifetime = 10 + this.random.nextInt(8);
+            this.setSpriteFromAge(sprites);
+        }
+
+        @Override
+        public void tick() {
+            super.tick();
+            if (!this.removed) {
+                this.setSpriteFromAge(this.sprites);
+            }
+        }
+
+        @Override
+        @Nonnull
+        public net.minecraft.client.particle.ParticleRenderType getRenderType() {
+            return net.minecraft.client.particle.ParticleRenderType.PARTICLE_SHEET_TRANSLUCENT;
+        }
+
+        public static class Provider implements ParticleProvider<net.minecraft.core.particles.SimpleParticleType> {
+            private final SpriteSet sprites;
+
+            public Provider(SpriteSet sprites) {
+                this.sprites = sprites;
+            }
+
+            @Override
+            @Nonnull
+            public Particle createParticle(@Nonnull net.minecraft.core.particles.SimpleParticleType type,
+                    @Nonnull ClientLevel level, double x, double y, double z, double xSpeed, double ySpeed,
+                    double zSpeed) {
+                return new BloodBubbleParticle(level, x, y, z, this.sprites, xSpeed, ySpeed, zSpeed);
             }
         }
     }

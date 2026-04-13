@@ -1,4 +1,4 @@
-# Catalyze Mod — State of the Mod Report 12-03-26
+# Catalyze Mod — State of the Mod Report 17-03-26
 
 ---
 
@@ -11,33 +11,33 @@
 ## Registered Items
 
 ### Weapon Catalysts
-Applied via a **Combat Template** at the smithing table.
+Applied via a **Combat Template** at the smithing table. Currently craftable using a Dormant Catalyst in the center of standard shape patterns.
 
-| Item ID | Effect Granted |
-|---|---|
-| `blazing_catalyst` | Sets target on fire for 5 seconds |
-| `freezing_catalyst` | Freezes the target (300 ticks) |
-| `venomous_catalyst` | Applies Poison I (3 seconds) |
-| `blinding_catalyst` | Applies Blindness I (1 second) |
-| `serrated_catalyst` | Applies Bleeding (with armor-scaled bonus chance) |
+| Item ID | Effect Granted | Crafting Recipe (Surrounding Items) |
+|---|---|---|
+| `blazing_catalyst` | Sets target on fire for 5 seconds | 4x Blaze Rod (Cross pattern) |
+| `freezing_catalyst` | Freezes the target (300 ticks) | 4x Blue Ice (Cross pattern) |
+| `venomous_catalyst` | Applies Poison I (3 seconds) | 4x Poisonous Potato (Cross pattern) |
+| `blinding_catalyst` | Applies Blindness I (1 second) | 4x Echo Shard (Cross pattern) |
+| `serrated_catalyst` | Applies Bleeding (with armor-scaled bonus chance) | 4x Rotten Flesh (Cross pattern) |
 
 ### Special Catalysts
 Applied via a **Special Template** on specific weapons only.
 
-| Item ID | Effect Granted | Restriction |
-|---|---|---|
-| `blood_reaper_catalyst` | Pulls target toward attacker on hit | Netherite Scythe only |
-| `piercing_catalyst` | Trident pierces unlimited entities | Trident only |
-| `throat_slit_catalyst` | *(Registered, not yet implemented)* | Arm blades only |
-| `tether_catalyst` | *(Registered, not yet implemented)* | Grappling Hook only |
-| `shattering_catalyst` | *(Registered, not yet implemented)* | Mace only |
+| Item ID | Effect Granted | Restriction | Crafting Recipe |
+|---|---|---|---|
+| `blood_reaper_catalyst` | Pulls target toward attacker on hit, allows shooting blood projectiles | Netherite Scythe only | Rotten Flesh (top), Iron Ingots (sides), Red Dye (bottom) |
+| `piercing_catalyst` | Trident pierces unlimited entities | Trident only | 4x Prismarine Shard + 2x Prismarine Crystals |
+| `throat_slit_catalyst` | *(Registered, not yet implemented)* | Arm blades only | Uncraftable |
+| `tether_catalyst` | *(Registered, not yet implemented)* | Grappling Hook only | Uncraftable |
+| `shattering_catalyst` | *(Registered, not yet implemented)* | Mace only | Uncraftable |
 
 ### Tool Catalysts
 Applied via a **Tool Template** at the smithing table.
 
-| Item ID | Effect Granted |
-|---|---|
-| `haste_catalyst` | *(Registered; NBT tag `haste` set, tooltip shown — in-game haste logic pending)* |
+| Item ID | Effect Granted | Crafting Recipe |
+|---|---|---|
+| `haste_catalyst` | *(Registered; NBT tag `haste` set, tooltip shown — in-game haste logic pending)* | 4x Golden Carrot (Cross pattern) |
 
 ### Armor Catalysts
 All currently **registered only**, with no in-game effects yet implemented.
@@ -59,13 +59,122 @@ Used as the required template slot in smithing recipes.
 | `special_template` | Blood Reaper (Scythe), Piercing (Trident) |
 | `armor_template` | *(Registered, not yet used)* |
 | `tool_template` | All pickaxes, axes, shovels, hoes |
-| `dormant_catalyst` | Base form of a catalyst (registered, not yet used) |
+| `dormant_catalyst` | Base form of a catalyst (crafted into specific catalysts) |
+
+---
+
+## Visual Crafting Guide
+
+Below are the exact 3x3 crafting grid layouts needed to forge each catalyst. All recipes require a single `<img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" width="20" align="top">` **Dormant Catalyst** located in the center.
+
+### 🟠 Blazing Catalyst
+
+| | | |
+|:---:|:---:|:---:|
+| | <img src="https://minecraft.wiki/images/Blaze_Rod_JE3_BE3.png" width="48" title="Blaze Rod"> | |
+| <img src="https://minecraft.wiki/images/Blaze_Rod_JE3_BE3.png" width="48" title="Blaze Rod"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" width="48" title="Dormant Catalyst"> | <img src="https://minecraft.wiki/images/Blaze_Rod_JE3_BE3.png" width="48" title="Blaze Rod"> |
+| | <img src="https://minecraft.wiki/images/Blaze_Rod_JE3_BE3.png" width="48" title="Blaze Rod"> | |
+
+**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/blazing_catalyst.png" width="48" align="top"> **Blazing Catalyst**
+
+### 🔵 Freezing Catalyst
+
+| | | |
+|:---:|:---:|:---:|
+| | <img src="https://minecraft.wiki/images/Blue_Ice_JE2_BE2.png" width="48" title="Blue Ice"> | |
+| <img src="https://minecraft.wiki/images/Blue_Ice_JE2_BE2.png" width="48" title="Blue Ice"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" width="48" title="Dormant Catalyst"> | <img src="https://minecraft.wiki/images/Blue_Ice_JE2_BE2.png" width="48" title="Blue Ice"> |
+| | <img src="https://minecraft.wiki/images/Blue_Ice_JE2_BE2.png" width="48" title="Blue Ice"> | |
+
+**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/freezing_catalyst.png" width="48" align="top"> **Freezing Catalyst**
+
+### 🟢 Venomous Catalyst
+
+| | | |
+|:---:|:---:|:---:|
+| | <img src="https://minecraft.wiki/images/Poisonous_Potato_JE3_BE2.png" width="48" title="Poisonous Potato"> | |
+| <img src="https://minecraft.wiki/images/Poisonous_Potato_JE3_BE2.png" width="48" title="Poisonous Potato"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" width="48" title="Dormant Catalyst"> | <img src="https://minecraft.wiki/images/Poisonous_Potato_JE3_BE2.png" width="48" title="Poisonous Potato"> |
+| | <img src="https://minecraft.wiki/images/Poisonous_Potato_JE3_BE2.png" width="48" title="Poisonous Potato"> | |
+
+**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/venomous_catalyst.png" width="48" align="top"> **Venomous Catalyst**
+
+### 🕳️ Blinding Catalyst
+
+| | | |
+|:---:|:---:|:---:|
+| | <img src="https://minecraft.wiki/images/Echo_Shard_JE1_BE1.png" width="48" title="Echo Shard"> | |
+| <img src="https://minecraft.wiki/images/Echo_Shard_JE1_BE1.png" width="48" title="Echo Shard"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" width="48" title="Dormant Catalyst"> | <img src="https://minecraft.wiki/images/Echo_Shard_JE1_BE1.png" width="48" title="Echo Shard"> |
+| | <img src="https://minecraft.wiki/images/Echo_Shard_JE1_BE1.png" width="48" title="Echo Shard"> | |
+
+**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/blinding_catalyst.png" width="48" align="top"> **Blinding Catalyst**
+
+### ⚫ Serrated Catalyst
+
+| | | |
+|:---:|:---:|:---:|
+| | <img src="https://minecraft.wiki/images/Rotten_Flesh_JE3_BE2.png" width="48" title="Rotten Flesh"> | |
+| <img src="https://minecraft.wiki/images/Rotten_Flesh_JE3_BE2.png" width="48" title="Rotten Flesh"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" width="48" title="Dormant Catalyst"> | <img src="https://minecraft.wiki/images/Rotten_Flesh_JE3_BE2.png" width="48" title="Rotten Flesh"> |
+| | <img src="https://minecraft.wiki/images/Rotten_Flesh_JE3_BE2.png" width="48" title="Rotten Flesh"> | |
+
+**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/serrated_catalyst.png" width="48" align="top"> **Serrated Catalyst**
+
+### 🩵 Piercing Catalyst
+
+| | | |
+|:---:|:---:|:---:|
+| | <img src="https://minecraft.wiki/images/Prismarine_Shard_JE2_BE2.png" width="48" title="Prismarine Shard"> | |
+| <img src="https://minecraft.wiki/images/Prismarine_Crystals_JE2_BE2.png" width="48" title="Prismarine Crystals"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" width="48" title="Dormant Catalyst"> | <img src="https://minecraft.wiki/images/Prismarine_Crystals_JE2_BE2.png" width="48" title="Prismarine Crystals"> |
+| | <img src="https://minecraft.wiki/images/Prismarine_Shard_JE2_BE2.png" width="48" title="Prismarine Shard"> | |
+
+**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/piercing_catalyst.png" width="48" align="top"> **Piercing Catalyst**
+
+### 🌕 Haste Catalyst
+
+| | | |
+|:---:|:---:|:---:|
+| | <img src="https://minecraft.wiki/images/Golden_Carrot_JE4_BE2.png" width="48" title="Golden Carrot"> | |
+| <img src="https://minecraft.wiki/images/Golden_Carrot_JE4_BE2.png" width="48" title="Golden Carrot"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" width="48" title="Dormant Catalyst"> | <img src="https://minecraft.wiki/images/Golden_Carrot_JE4_BE2.png" width="48" title="Golden Carrot"> |
+| | <img src="https://minecraft.wiki/images/Golden_Carrot_JE4_BE2.png" width="48" title="Golden Carrot"> | |
+
+**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/haste_catalyst.png" width="48" align="top"> **Haste Catalyst**
+
+### 🩸 Blood Reaper Catalyst
+
+| | | |
+|:---:|:---:|:---:|
+| | <img src="https://minecraft.wiki/images/Rotten_Flesh_JE3_BE2.png" width="48" title="Rotten Flesh"> | |
+| <img src="https://minecraft.wiki/images/Iron_Ingot_JE3_BE2.png" width="48" title="Iron Ingot"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" width="48" title="Dormant Catalyst"> | <img src="https://minecraft.wiki/images/Iron_Ingot_JE3_BE2.png" width="48" title="Iron Ingot"> |
+| | <img src="https://minecraft.wiki/images/Red_Dye_JE2_BE2.png" width="48" title="Red Dye"> | |
+
+**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/blood_reaper_catalyst.png" width="48" align="top"> **Blood Reaper Catalyst**
 
 ### Custom Weapons
 
-| Item | Class | Stats | Recipe |
-|---|---|---|---|
-| `netherite_scythe` | `NetheriteScytheItem extends SwordItem` | Netherite tier, +5.5 ATK, -2.7 ATK SPD | 2 Netherite Ingots + 3 Sticks (shaped) |
+| Item | Class | Stats | Recipe | Mechanics |
+|---|---|---|---|---|
+| `netherite_scythe` | `NetheriteScytheItem extends SwordItem` | Netherite tier, +5.5 ATK, -2.7 ATK SPD | 2 Netherite Ingots + 3 Sticks (shaped) | Can be augmented to fire `blood_projectile` if it has the `blood_reaper` catalyst across a 20s cooldown. |
+| `blood_projectile_debug` | `BloodProjectileDebugItem` | N/A | None (Debug Only) | Right-click to manually spawn a testing Blood Projectile. |
+
+---
+
+## Entities & Projectiles
+
+### `blood_projectile`
+A custom high-performance projectile designed for precision and visual clarity, primarily used by the **Netherite Scythe** when combined with the **Blood Reaper** catalyst (20-second active cooldown via generic Minecraft item cooling).
+
+- **Movement & Physics**:
+  - **Speed**: Optimized to **15 blocks/s** (0.75 blocks/tick).
+  - **Zero Gravity**: Moves in a perfectly straight line according to the shooter's pitch and yaw.
+  - **Smooth Sync**: Logic runs natively on both client and server to eliminate jitter/teleporting.
+  - **Hitbox**: Standardized **0.5 x 0.5** for reliable collision detection.
+- **Combat**:
+  - **Damage**: Balanced to deal approximately **13.0 damage** (6.5 hearts).
+  - **Behavior**: Disappears immediately upon hitting a block or entity.
+- **Visuals & Audio**:
+  - **Spawn Sound**: Randomizes between 3 specialized `blood_spewing` audio files locally fired on instantiation.
+  - **Impact Sound**: Squishy `blood_projectile_hit` audio played dynamically exactly at the collision point using custom higher volume bounds.
+  - **Animations**: A trailing stream of **Blood Bubble** particles (`blood_bubble_0` -> `blood_bubble_4`) emits softly behind the projectile as it flies directly across the action plane.
+- **Rendering**:
+  - **Pixel-Perfect Mapping**: Custom quad renderer maps a **32x32** texture onto a flat proportional plane, rotated dynamically `-90°` around its Y-axis for accurate viewing from all slicing motions.
 
 ---
 
@@ -73,12 +182,13 @@ Used as the required template slot in smithing recipes.
 
 ### How It Works
 
-1. **Recipe**: A custom `CatalystSmithingRecipe` (extends `SmithingTransformRecipe`) is used at the smithing table with a **Template + Weapon/Tool + Catalyst**.
-2. **Assembly**: The recipe's `assemble()` method copies the base item and writes a boolean NBT flag into `CustomData` under the `catalyze_mod` compound key, e.g.:
+1. **Crafting**: Unique component modifiers are constructed using a `Dormant Catalyst` wrapped in specified target ingredients along a 3x3 table.
+2. **Recipe**: A custom `CatalystSmithingRecipe` (extends `SmithingTransformRecipe`) is then used at the smithing table with a **Template + Weapon/Tool + Catalyst**.
+3. **Assembly**: The recipe's `assemble()` method copies the base item and writes a boolean NBT flag into `CustomData` under the `catalyze_mod` compound key, e.g.:
    ```json
    { "catalyze_mod": { "blazing": true } }
    ```
-3. **Effect Trigger**: On hit, Mixins injected into `hurtEnemy` read these flags and apply the appropriate effect.
+4. **Effect Trigger**: On hit (or on right-click for special mechanics like the Scythe), Mixins and item overriding methods check these native flags to trigger the requested logic.
 
 A catalyst **overwrites** any previous catalyst data (only one catalyst per item at a time).
 
@@ -134,12 +244,17 @@ The `serrated` effect has a **bonus chance** to upgrade Bleeding to Level 2, red
 
 ---
 
-## Blood Particle VFX
+## VFX & Audio Systems
 
-A custom `BLOOD_PARTICLE` particle type is registered. Entities affected by **Bleeding** continuously emit falling blood particles:
-- Spawned server-side via `sendParticles` on entity tick
-- Rate and count scale with amplifier (more particles at higher levels)
-- Rendered client-side by `BloodParticle extends TextureSheetParticle`
+### Particles
+- **Bleeding Effect**: Entities affected by Bleeding continuously emit falling blood particles. Scaled by amplifier level.
+- **Blood Bubbles**: A new `BLOOD_BUBBLE_PARTICLE` emits behind the blood projectile's flight path. Managed purely on the client with zero gravity logic inside its own generic provider class, directly fetching states from `blood_bubble_particle.json`.
+
+### Custom Sound System 
+A robust foundation for adding unique audio dynamically.
+- **Registry**: `ModSounds.java` centralizes all `.ogg` mappings implicitly calling events.
+- **Variations**: The `blood_spewing` event is properly configured to randomly fetch between 3 individual source pitches (`blood_spewing_0`, `scythe_spewing_1`, `scythe_spewing_2`) dynamically via core JSON arrays.
+- **Native Implementation**: Fully suppresses standard arrow and attack `thwacks` over specialized generic events allowing zero overlap.
 
 ---
 
@@ -166,13 +281,12 @@ Gradient color palettes:
 
 ---
 
-## Datagen
+## Datagen & Crafting Codec
 
-All catalyst smithing recipes are generated programmatically via `ModRecipeProvider`:
-- `addCatalystRecipes()` — loops over all swords, axes, the scythe, trident (excl. serrated), and mace
-- `addPiercingRecipe()` — Trident + Special Template + Piercing Catalyst
-- `addHasteRecipes()` — all pickaxes, axes, shovels, and hoes + Tool Template + Haste Catalyst
-- Recipe IDs follow the pattern: `catalyze_mod:<prefix>_<item_path>`
+All crafting shapes and catalyst smithing recipes are handled programmatically via `ModRecipeProvider`:
+- `addCatalystCraftingRecipes()` & `ShapedRecipeBuilder` — Constructs central `dormant_catalyst` recipes directly into game memory without static definitions.
+- `addCatalystRecipes()` — Loops over all targeted weapon models and binds templates directly.
+- Recipe IDs follow standard forge taxonomy: `catalyze_mod:<prefix>_<item_path>`
 
 ---
 
@@ -184,7 +298,6 @@ All catalyst smithing recipes are generated programmatically via `ModRecipeProvi
 | `tether_catalyst` | Registered, no recipe or effect |
 | `shattering_catalyst` | Registered, no recipe or effect |
 | All Armor Catalysts | Registered, no recipes or effects |
-| `dormant_catalyst` | Registered, purpose unclear |
 | `haste_catalyst` | Registered, recipe exists, tooltip exists, but in-game haste effect not applied |
 | `blocks` package | Empty directory, no custom blocks defined |
 | `event` package | Listed but appears empty |
@@ -345,11 +458,14 @@ Catalyze_mod (main entry)
 │   └── AbstractArrowAccessor — Accessor for piercing logic
 │
 ├── events/
-│   ├── ModClientEvents      — Tooltips + Blood particle rendering
+│   ├── ModClientEvents      — Tooltips + Blood projectile renderer registration
 │   └── ModCommonEvents      — Bleeding particle spawn on entity tick
 │
+├── sounds/
+│   └── ModSounds            — Sound registry
+│
 └── util/
-    ├── TextUtil     — Animated gradient text
-    ├── ModTags      — Entity type tags (immune_to_bleeding)
-    └── ModKeyBindings — (Registered, purpose TBD)
+    ├── TextUtil             — Animated gradient text
+    ├── ModTags              — Entity type tags (immune_to_bleeding)
+    └── ModKeyBindings       — (Registered, purpose TBD)
 ```
