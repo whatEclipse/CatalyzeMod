@@ -1,4 +1,4 @@
-# Catalyze Mod — State of the Mod Report 17-03-26
+# Catalyze Mod — State of the Mod Report 13-04-26
 
 ---
 
@@ -141,8 +141,8 @@ Below are the exact 3x3 crafting grid layouts needed to forge each catalyst. All
 
 | | | |
 |:---:|:---:|:---:|
-| | <img src="https://minecraft.wiki/images/Rotten_Flesh_JE3_BE2.png" width="48" title="Rotten Flesh"> | |
-| <img src="https://minecraft.wiki/images/Iron_Ingot_JE3_BE2.png" width="48" title="Iron Ingot"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" width="48" title="Dormant Catalyst"> | <img src="https://minecraft.wiki/images/Iron_Ingot_JE3_BE2.png" width="48" title="Iron Ingot"> |
+| | <img src="https://minecraft.wiki/images/Iron_Ingot_JE3_BE2.png" width="48" title="Iron Ingot"> | |
+| <img src="https://minecraft.wiki/images/Rotten_Flesh_JE3_BE2.png" width="48" title="Rotten Flesh"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" width="48" title="Dormant Catalyst"> | <img src="https://minecraft.wiki/images/Rotten_Flesh_JE3_BE2.png" width="48" title="Rotten Flesh"> |
 | | <img src="https://minecraft.wiki/images/Red_Dye_JE2_BE2.png" width="48" title="Red Dye"> | |
 
 **➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/blood_reaper_catalyst.png" width="48" align="top"> **Blood Reaper Catalyst**
@@ -204,9 +204,7 @@ A catalyst **overwrites** any previous catalyst data (only one catalyst per item
 | Blinding | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Serrated | ✅ | ✅ | ✅ | — | — |
 | Blood Reaper | — | — | ✅ | — | — |
-| Piercing | — | — | — | ✅¹ | — |
-
-> ¹ Piercing is implemented via `ThrownTridentMixin` and applies to thrown tridents only.
+| Piercing | — | — | — | ✅ | — |
 
 ---
 
