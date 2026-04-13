@@ -65,88 +65,87 @@ Used as the required template slot in smithing recipes.
 
 ## Visual Crafting Guide
 
-Below are the exact 3x3 crafting grid layouts needed to forge each catalyst. All recipes require a single `<img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" width="16" style="image-rendering: pixelated;" align="top">` **Dormant Catalyst** located in the center.
+Below are the exact 3x3 crafting grid layouts needed to forge each catalyst. All recipes require a single `<img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" align="top">` **Dormant Catalyst** located in the center.
 
 ### 🟠 Blazing Catalyst
 
 | | | |
 |:---:|:---:|:---:|
-| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/blaze_rod.png" width="32" style="image-rendering: pixelated;" title="Blaze Rod"> | |
-| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/blaze_rod.png" width="32" style="image-rendering: pixelated;" title="Blaze Rod"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" width="32" style="image-rendering: pixelated;" title="Dormant Catalyst"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/blaze_rod.png" width="32" style="image-rendering: pixelated;" title="Blaze Rod"> |
-| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/blaze_rod.png" width="32" style="image-rendering: pixelated;" title="Blaze Rod"> | |
+| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/blaze_rod.png" title="Blaze Rod"> | |
+| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/blaze_rod.png" title="Blaze Rod"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" title="Dormant Catalyst"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/blaze_rod.png" title="Blaze Rod"> |
+| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/blaze_rod.png" title="Blaze Rod"> | |
 
-**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/blazing_catalyst.png" width="32" style="image-rendering: pixelated;" align="top"> **Blazing Catalyst**
+**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/blazing_catalyst.png" align="top"> **Blazing Catalyst**
 
 ### 🔵 Freezing Catalyst
 
 | | | |
 |:---:|:---:|:---:|
-| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/block/blue_ice.png" width="32" style="image-rendering: pixelated;" title="Blue Ice"> | |
-| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/block/blue_ice.png" width="32" style="image-rendering: pixelated;" title="Blue Ice"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" width="32" style="image-rendering: pixelated;" title="Dormant Catalyst"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/block/blue_ice.png" width="32" style="image-rendering: pixelated;" title="Blue Ice"> |
-| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/block/blue_ice.png" width="32" style="image-rendering: pixelated;" title="Blue Ice"> | |
+| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/block/blue_ice.png" title="Blue Ice"> | |
+| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/block/blue_ice.png" title="Blue Ice"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" title="Dormant Catalyst"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/block/blue_ice.png" title="Blue Ice"> |
+| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/block/blue_ice.png" title="Blue Ice"> | |
 
-**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/freezing_catalyst.png" width="32" style="image-rendering: pixelated;" align="top"> **Freezing Catalyst**
+**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/freezing_catalyst.png" align="top"> **Freezing Catalyst**
 
 ### 🟢 Venomous Catalyst
 
 | | | |
 |:---:|:---:|:---:|
-| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/poisonous_potato.png" width="32" style="image-rendering: pixelated;" title="Poisonous Potato"> | |
-| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/poisonous_potato.png" width="32" style="image-rendering: pixelated;" title="Poisonous Potato"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" width="32" style="image-rendering: pixelated;" title="Dormant Catalyst"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/poisonous_potato.png" width="32" style="image-rendering: pixelated;" title="Poisonous Potato"> |
-| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/poisonous_potato.png" width="32" style="image-rendering: pixelated;" title="Poisonous Potato"> | |
+| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/poisonous_potato.png" title="Poisonous Potato"> | |
+| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/poisonous_potato.png" title="Poisonous Potato"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" title="Dormant Catalyst"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/poisonous_potato.png" title="Poisonous Potato"> |
+| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/poisonous_potato.png" title="Poisonous Potato"> | |
 
-**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/venomous_catalyst.png" width="32" style="image-rendering: pixelated;" align="top"> **Venomous Catalyst**
+**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/venomous_catalyst.png" align="top"> **Venomous Catalyst**
 
 ### 🕳️ Blinding Catalyst
 
 | | | |
 |:---:|:---:|:---:|
-| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/echo_shard.png" width="32" style="image-rendering: pixelated;" title="Echo Shard"> | |
-| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/echo_shard.png" width="32" style="image-rendering: pixelated;" title="Echo Shard"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" width="32" style="image-rendering: pixelated;" title="Dormant Catalyst"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/echo_shard.png" width="32" style="image-rendering: pixelated;" title="Echo Shard"> |
-| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/echo_shard.png" width="32" style="image-rendering: pixelated;" title="Echo Shard"> | |
+| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/echo_shard.png" title="Echo Shard"> | |
+| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/echo_shard.png" title="Echo Shard"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" title="Dormant Catalyst"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/echo_shard.png" title="Echo Shard"> |
+| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/echo_shard.png" title="Echo Shard"> | |
 
-**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/blinding_catalyst.png" width="32" style="image-rendering: pixelated;" align="top"> **Blinding Catalyst**
+**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/blinding_catalyst.png" align="top"> **Blinding Catalyst**
 
 ### ⚫ Serrated Catalyst
 
 | | | |
 |:---:|:---:|:---:|
-| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/rotten_flesh.png" width="32" style="image-rendering: pixelated;" title="Rotten Flesh"> | |
-| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/rotten_flesh.png" width="32" style="image-rendering: pixelated;" title="Rotten Flesh"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" width="32" style="image-rendering: pixelated;" title="Dormant Catalyst"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/rotten_flesh.png" width="32" style="image-rendering: pixelated;" title="Rotten Flesh"> |
-| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/rotten_flesh.png" width="32" style="image-rendering: pixelated;" title="Rotten Flesh"> | |
+| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/rotten_flesh.png" title="Rotten Flesh"> | |
+| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/rotten_flesh.png" title="Rotten Flesh"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" title="Dormant Catalyst"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/rotten_flesh.png" title="Rotten Flesh"> |
+| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/rotten_flesh.png" title="Rotten Flesh"> | |
 
-**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/serrated_catalyst.png" width="32" style="image-rendering: pixelated;" align="top"> **Serrated Catalyst**
+**➡ Yields:** (currently missing texture) **Serrated Catalyst**
 
 ### 🩵 Piercing Catalyst
 
 | | | |
 |:---:|:---:|:---:|
-| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/prismarine_shard.png" width="32" style="image-rendering: pixelated;" title="Prismarine Shard"> | |
-| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/prismarine_crystals.png" width="32" style="image-rendering: pixelated;" title="Prismarine Crystals"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" width="32" style="image-rendering: pixelated;" title="Dormant Catalyst"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/prismarine_crystals.png" width="32" style="image-rendering: pixelated;" title="Prismarine Crystals"> |
-| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/prismarine_shard.png" width="32" style="image-rendering: pixelated;" title="Prismarine Shard"> | |
+| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/prismarine_shard.png" title="Prismarine Shard"> | |
+| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/prismarine_crystals.png" title="Prismarine Crystals"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" title="Dormant Catalyst"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/prismarine_crystals.png" title="Prismarine Crystals"> |
+| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/prismarine_shard.png" title="Prismarine Shard"> | |
 
-**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/piercing_catalyst.png" width="32" style="image-rendering: pixelated;" align="top"> **Piercing Catalyst**
+**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/piercing_catalyst.png" align="top"> **Piercing Catalyst**
 
 ### 🌕 Haste Catalyst
 
 | | | |
 |:---:|:---:|:---:|
-| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/golden_carrot.png" width="32" style="image-rendering: pixelated;" title="Golden Carrot"> | |
-| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/golden_carrot.png" width="32" style="image-rendering: pixelated;" title="Golden Carrot"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" width="32" style="image-rendering: pixelated;" title="Dormant Catalyst"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/golden_carrot.png" width="32" style="image-rendering: pixelated;" title="Golden Carrot"> |
-| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/golden_carrot.png" width="32" style="image-rendering: pixelated;" title="Golden Carrot"> | |
+| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/golden_carrot.png" title="Golden Carrot"> | |
+| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/golden_carrot.png" title="Golden Carrot"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" title="Dormant Catalyst"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/golden_carrot.png" title="Golden Carrot"> |
+| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/golden_carrot.png" title="Golden Carrot"> | |
 
-**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/haste_catalyst.png" width="32" style="image-rendering: pixelated;" align="top"> **Haste Catalyst**
+**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/haste_catalyst.png" align="top"> **Haste Catalyst**
 
 ### 🩸 Blood Reaper Catalyst
 
 | | | |
 |:---:|:---:|:---:|
-| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/iron_ingot.png" width="32" style="image-rendering: pixelated;" title="Iron Ingot"> | |
-| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/rotten_flesh.png" width="32" style="image-rendering: pixelated;" title="Rotten Flesh"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" width="32" style="image-rendering: pixelated;" title="Dormant Catalyst"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/rotten_flesh.png" width="32" style="image-rendering: pixelated;" title="Rotten Flesh"> |
-| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/red_dye.png" width="32" style="image-rendering: pixelated;" title="Red Dye"> | |
+| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/iron_ingot.png" title="Iron Ingot"> | |
+| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/rotten_flesh.png" title="Rotten Flesh"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" title="Dormant Catalyst"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/rotten_flesh.png" title="Rotten Flesh"> |
+| | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/red_dye.png" title="Red Dye"> | |
 
-**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/blood_reaper_catalyst.png" width="32" style="image-rendering: pixelated;" align="top"> **Blood Reaper Catalyst**
-
+**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/blood_reaper_catalyst.png" align="top"> **Blood Reaper Catalyst**
 ### Custom Weapons
 
 | Item | Class | Stats | Recipe | Mechanics |
