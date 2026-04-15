@@ -146,7 +146,6 @@ Below are the exact 3x3 crafting grid layouts needed to forge each catalyst. All
 | | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/red_dye.png" title="Red Dye"> | |
 
 **➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/blood_reaper_catalyst.png" align="top"> **Blood Reaper Catalyst**
-
 ### Custom Weapons
 
 | Item | Class | Stats | Recipe | Mechanics |
