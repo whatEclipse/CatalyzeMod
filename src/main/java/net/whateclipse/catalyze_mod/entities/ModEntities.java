@@ -20,6 +20,13 @@ public class ModEntities {
                     .updateInterval(1)
                     .build("blood_projectile"));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<net.whateclipse.catalyze_mod.entity.GrapplingHookEntity>> GRAPPLING_HOOK = ENTITIES.register("grappling_hook",
+            () -> EntityType.Builder.<net.whateclipse.catalyze_mod.entity.GrapplingHookEntity>of(net.whateclipse.catalyze_mod.entity.GrapplingHookEntity::new, MobCategory.MISC)
+                    .sized(0.5F, 0.5F)
+                    .clientTrackingRange(64)
+                    .updateInterval(1)
+                    .build("grappling_hook"));
+
     public static void register(@SuppressWarnings("null") IEventBus eventBus) {
         ENTITIES.register(eventBus);
     }
