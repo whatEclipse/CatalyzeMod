@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tellurite:item/scythe_16",
+    "particle": "tellurite:/scythe_16"
+  }
+}

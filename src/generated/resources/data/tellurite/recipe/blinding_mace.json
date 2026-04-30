@@ -1,0 +1,16 @@
+{
+  "type": "tellurite:inductor_smithing",
+  "addition": {
+    "item": "tellurite:blinding_inductor"
+  },
+  "base": {
+    "item": "minecraft:mace"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:mace"
+  },
+  "template": {
+    "item": "tellurite:combat_template"
+  }
+}

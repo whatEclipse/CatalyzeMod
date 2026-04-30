@@ -1,0 +1,16 @@
+{
+  "blood_projectile_hit": {
+    "subtitle": "subtitles.tellurite.blood_projectile_hit",
+    "sounds": [
+      "tellurite:blood_hit"
+    ]
+  },
+  "blood_spewing": {
+    "subtitle": "subtitles.tellurite.blood_spewing",
+    "sounds": [
+      "tellurite:blood_spewing_0",
+      "tellurite:scythe_spewing_1",
+      "tellurite:scythe_spewing_2"
+    ]
+  }
+}

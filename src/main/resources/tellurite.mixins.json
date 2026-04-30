@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8.5",
+  "package": "net.whateclipse.tellurite.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "SwordItemMixin",
+    "DiggerItemMixin",
+    "MaceItemMixin",
+    "TridentItemMixin",
+    "MobEffectInstanceMixin",
+    "LivingEntityMixin",
+    "ThrownTridentMixin",
+    "AbstractArrowAccessor"
+  ],
+  "client": [],
+  "server": []
+}

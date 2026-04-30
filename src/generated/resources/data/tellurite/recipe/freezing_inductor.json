@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "!": {
+      "item": "tellurite:telumite_nodule"
+    },
+    "#": {
+      "item": "minecraft:blue_ice"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#!#",
+    " # "
+  ],
+  "result": {
+    "count": 1,
+    "id": "tellurite:freezing_inductor"
+  }
+}

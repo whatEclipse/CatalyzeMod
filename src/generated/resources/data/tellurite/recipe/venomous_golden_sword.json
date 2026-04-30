@@ -1,0 +1,16 @@
+{
+  "type": "tellurite:inductor_smithing",
+  "addition": {
+    "item": "tellurite:venomous_inductor"
+  },
+  "base": {
+    "item": "minecraft:golden_sword"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:golden_sword"
+  },
+  "template": {
+    "item": "tellurite:combat_template"
+  }
+}

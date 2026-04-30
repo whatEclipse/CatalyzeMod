@@ -1,54 +1,58 @@
-# Catalyze Mod — State of the Mod Report 13-04-26
+# Tellurite — State of the Mod Report
 
 ---
 
 ## Overview
 
-**Catalyze** is a NeoForge mod that introduces a **catalyst system** — a smithing-table-based upgrade path that applies unique gameplay effects to existing weapons and tools without replacing them. Effects are stored as NBT flags inside `CustomData` on the item, allowing any vanilla item to be augmented in-place.
+Welcome to the new era of **Tellurite** (formerly known as Catalyze)! We've completely rebranded our core mechanics to offer a distinct, unique identity. 
+- **Catalysts** are now **Telucite Inductors**.
+- **Dormant Catalysts** are now **Telumite Nodules**.
+
+**Tellurite** is a NeoForge mod that introduces an **inductor system** — a smithing-table-based upgrade path that applies unique gameplay effects to existing weapons and tools without replacing them. Effects are stored as NBT flags inside `CustomData` on the item, allowing any vanilla item to be augmented in-place.
 
 ---
 
 ## Registered Items
 
-### Weapon Catalysts
-Applied via a **Combat Template** at the smithing table. Currently craftable using a Dormant Catalyst in the center of standard shape patterns.
+### Weapon Telucite Inductors
+Applied via a **Combat Template** at the smithing table. Currently craftable using a Telumite Nodule in the center of standard shape patterns.
 
 | Item ID | Effect Granted | Crafting Recipe (Surrounding Items) |
 |---|---|---|
-| `blazing_catalyst` | Sets target on fire for 5 seconds | 4x Blaze Rod (Cross pattern) |
-| `freezing_catalyst` | Freezes the target (300 ticks) | 4x Blue Ice (Cross pattern) |
-| `venomous_catalyst` | Applies Poison I (3 seconds) | 4x Poisonous Potato (Cross pattern) |
-| `blinding_catalyst` | Applies Blindness I (1 second) | 4x Echo Shard (Cross pattern) |
-| `serrated_catalyst` | Applies Bleeding (with armor-scaled bonus chance) | 4x Rotten Flesh (Cross pattern) |
+| `blazing_inductor` | Sets target on fire for 5 seconds | 4x Blaze Rod (Cross pattern) |
+| `freezing_inductor` | Freezes the target (300 ticks) | 4x Blue Ice (Cross pattern) |
+| `venomous_inductor` | Applies Poison I (3 seconds) | 4x Poisonous Potato (Cross pattern) |
+| `blinding_inductor` | Applies Blindness I (1 second) | 4x Echo Shard (Cross pattern) |
+| `serrated_inductor` | Applies Bleeding (with armor-scaled bonus chance) | 4x Rotten Flesh (Cross pattern) |
 
-### Special Catalysts
+### Special Telucite Inductors
 Applied via a **Special Template** on specific weapons only.
 
 | Item ID | Effect Granted | Restriction | Crafting Recipe |
 |---|---|---|---|
-| `blood_reaper_catalyst` | Pulls target toward attacker on hit, allows shooting blood projectiles | Netherite Scythe only | Rotten Flesh (top), Iron Ingots (sides), Red Dye (bottom) |
-| `piercing_catalyst` | Trident pierces unlimited entities | Trident only | 4x Prismarine Shard + 2x Prismarine Crystals |
-| `throat_slit_catalyst` | *(Registered, not yet implemented)* | Arm blades only | Uncraftable |
-| `tether_catalyst` | *(Registered, not yet implemented)* | Grappling Hook only | Uncraftable |
-| `shattering_catalyst` | *(Registered, not yet implemented)* | Mace only | Uncraftable |
+| `blood_reaper_inductor` | Pulls target toward attacker on hit, allows shooting blood projectiles | Netherite Scythe only | Rotten Flesh (top), Iron Ingots (sides), Red Dye (bottom) |
+| `piercing_inductor` | Trident pierces unlimited entities | Trident only | 4x Prismarine Shard + 2x Prismarine Crystals |
+| `throat_slit_inductor` | *(Registered, not yet implemented)* | Arm blades only | Uncraftable |
+| `tether_inductor` | *(Registered, not yet implemented)* | Grappling Hook only | Uncraftable |
+| `shattering_inductor` | *(Registered, not yet implemented)* | Mace only | Uncraftable |
 
-### Tool Catalysts
+### Tool Telucite Inductors
 Applied via a **Tool Template** at the smithing table.
 
 | Item ID | Effect Granted | Crafting Recipe |
 |---|---|---|
-| `haste_catalyst` | *(Registered; NBT tag `haste` set, tooltip shown — in-game haste logic pending)* | 4x Golden Carrot (Cross pattern) |
+| `haste_inductor` | *(Registered; NBT tag `haste` set, tooltip shown — in-game haste logic pending)* | 4x Golden Carrot (Cross pattern) |
 
-### Armor Catalysts
+### Armor Telucite Inductors
 All currently **registered only**, with no in-game effects yet implemented.
 
 | Item ID |
 |---|
-| `resilience_catalyst` |
-| `perception_catalyst` |
-| `titan_skin_catalyst` |
-| `agility_catalyst` |
-| `heavy_weight_catalyst` |
+| `resilience_inductor` |
+| `perception_inductor` |
+| `titan_skin_inductor` |
+| `agility_inductor` |
+| `heavy_weight_inductor` |
 
 ### Templates
 Used as the required template slot in smithing recipes.
@@ -59,98 +63,98 @@ Used as the required template slot in smithing recipes.
 | `special_template` | Blood Reaper (Scythe), Piercing (Trident) |
 | `armor_template` | *(Registered, not yet used)* |
 | `tool_template` | All pickaxes, axes, shovels, hoes |
-| `dormant_catalyst` | Base form of a catalyst (crafted into specific catalysts) |
+| `telumite_nodule` | Base form of a inductor (crafted into specific inductors) |
 
 ---
 
 ## Visual Crafting Guide
 
-Below are the exact 3x3 crafting grid layouts needed to forge each catalyst. All recipes require a single `<img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" align="top">` **Dormant Catalyst** located in the center.
+Below are the exact 3x3 crafting grid layouts needed to forge each inductor. All recipes require a single `<img src="src/main/resources/assets/tellurite/textures/item/telumite_nodule.png" align="top">` **Telumite Nodule** located in the center.
 
-### 🟠 Blazing Catalyst
+### 🟠 Blazing Telucite Inductor
 
 | | | |
 |:---:|:---:|:---:|
 | | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/blaze_rod.png" title="Blaze Rod"> | |
-| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/blaze_rod.png" title="Blaze Rod"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" title="Dormant Catalyst"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/blaze_rod.png" title="Blaze Rod"> |
+| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/blaze_rod.png" title="Blaze Rod"> | <img src="src/main/resources/assets/tellurite/textures/item/telumite_nodule.png" title="Telumite Nodule"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/blaze_rod.png" title="Blaze Rod"> |
 | | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/blaze_rod.png" title="Blaze Rod"> | |
 
-**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/blazing_catalyst.png" align="top"> **Blazing Catalyst**
+**➡ Yields:** <img src="src/main/resources/assets/tellurite/textures/item/blazing_inductor.png" align="top"> **Blazing Telucite Inductor**
 
-### 🔵 Freezing Catalyst
+### 🔵 Freezing Telucite Inductor
 
 | | | |
 |:---:|:---:|:---:|
 | | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/block/blue_ice.png" title="Blue Ice"> | |
-| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/block/blue_ice.png" title="Blue Ice"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" title="Dormant Catalyst"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/block/blue_ice.png" title="Blue Ice"> |
+| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/block/blue_ice.png" title="Blue Ice"> | <img src="src/main/resources/assets/tellurite/textures/item/telumite_nodule.png" title="Telumite Nodule"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/block/blue_ice.png" title="Blue Ice"> |
 | | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/block/blue_ice.png" title="Blue Ice"> | |
 
-**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/freezing_catalyst.png" align="top"> **Freezing Catalyst**
+**➡ Yields:** <img src="src/main/resources/assets/tellurite/textures/item/freezing_inductor.png" align="top"> **Freezing Telucite Inductor**
 
-### 🟢 Venomous Catalyst
+### 🟢 Venomous Telucite Inductor
 
 | | | |
 |:---:|:---:|:---:|
 | | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/poisonous_potato.png" title="Poisonous Potato"> | |
-| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/poisonous_potato.png" title="Poisonous Potato"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" title="Dormant Catalyst"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/poisonous_potato.png" title="Poisonous Potato"> |
+| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/poisonous_potato.png" title="Poisonous Potato"> | <img src="src/main/resources/assets/tellurite/textures/item/telumite_nodule.png" title="Telumite Nodule"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/poisonous_potato.png" title="Poisonous Potato"> |
 | | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/poisonous_potato.png" title="Poisonous Potato"> | |
 
-**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/venomous_catalyst.png" align="top"> **Venomous Catalyst**
+**➡ Yields:** <img src="src/main/resources/assets/tellurite/textures/item/venomous_inductor.png" align="top"> **Venomous Telucite Inductor**
 
-### 🕳️ Blinding Catalyst
+### 🕳️ Blinding Telucite Inductor
 
 | | | |
 |:---:|:---:|:---:|
 | | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/echo_shard.png" title="Echo Shard"> | |
-| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/echo_shard.png" title="Echo Shard"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" title="Dormant Catalyst"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/echo_shard.png" title="Echo Shard"> |
+| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/echo_shard.png" title="Echo Shard"> | <img src="src/main/resources/assets/tellurite/textures/item/telumite_nodule.png" title="Telumite Nodule"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/echo_shard.png" title="Echo Shard"> |
 | | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/echo_shard.png" title="Echo Shard"> | |
 
-**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/blinding_catalyst.png" align="top"> **Blinding Catalyst**
+**➡ Yields:** <img src="src/main/resources/assets/tellurite/textures/item/blinding_inductor.png" align="top"> **Blinding Telucite Inductor**
 
-### ⚫ Serrated Catalyst
+### ⚫ Serrated Telucite Inductor
 
 | | | |
 |:---:|:---:|:---:|
 | | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/rotten_flesh.png" title="Rotten Flesh"> | |
-| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/rotten_flesh.png" title="Rotten Flesh"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" title="Dormant Catalyst"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/rotten_flesh.png" title="Rotten Flesh"> |
+| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/rotten_flesh.png" title="Rotten Flesh"> | <img src="src/main/resources/assets/tellurite/textures/item/telumite_nodule.png" title="Telumite Nodule"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/rotten_flesh.png" title="Rotten Flesh"> |
 | | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/rotten_flesh.png" title="Rotten Flesh"> | |
 
-**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/serrated_catalyst.png" align="top"> **Serrated Catalyst**
+**➡ Yields:** <img src="src/main/resources/assets/tellurite/textures/item/serrated_inductor.png" align="top"> **Serrated Telucite Inductor**
 
-### 🩵 Piercing Catalyst
+### 🩵 Piercing Telucite Inductor
 
 | | | |
 |:---:|:---:|:---:|
 | | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/prismarine_shard.png" title="Prismarine Shard"> | |
-| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/prismarine_crystals.png" title="Prismarine Crystals"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" title="Dormant Catalyst"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/prismarine_crystals.png" title="Prismarine Crystals"> |
+| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/prismarine_crystals.png" title="Prismarine Crystals"> | <img src="src/main/resources/assets/tellurite/textures/item/telumite_nodule.png" title="Telumite Nodule"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/prismarine_crystals.png" title="Prismarine Crystals"> |
 | | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/prismarine_shard.png" title="Prismarine Shard"> | |
 
-**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/piercing_catalyst.png" align="top"> **Piercing Catalyst**
+**➡ Yields:** <img src="src/main/resources/assets/tellurite/textures/item/piercing_inductor.png" align="top"> **Piercing Telucite Inductor**
 
-### 🌕 Haste Catalyst
+### 🌕 Haste Telucite Inductor
 
 | | | |
 |:---:|:---:|:---:|
 | | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/golden_carrot.png" title="Golden Carrot"> | |
-| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/golden_carrot.png" title="Golden Carrot"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" title="Dormant Catalyst"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/golden_carrot.png" title="Golden Carrot"> |
+| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/golden_carrot.png" title="Golden Carrot"> | <img src="src/main/resources/assets/tellurite/textures/item/telumite_nodule.png" title="Telumite Nodule"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/golden_carrot.png" title="Golden Carrot"> |
 | | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/golden_carrot.png" title="Golden Carrot"> | |
 
-**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/haste_catalyst.png" align="top"> **Haste Catalyst**
+**➡ Yields:** <img src="src/main/resources/assets/tellurite/textures/item/haste_inductor.png" align="top"> **Haste Telucite Inductor**
 
-### 🩸 Blood Reaper Catalyst
+### 🩸 Blood Reaper Telucite Inductor
 
 | | | |
 |:---:|:---:|:---:|
 | | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/iron_ingot.png" title="Iron Ingot"> | |
-| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/rotten_flesh.png" title="Rotten Flesh"> | <img src="src/main/resources/assets/catalyze_mod/textures/item/dormant_catalyst.png" title="Dormant Catalyst"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/rotten_flesh.png" title="Rotten Flesh"> |
+| <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/rotten_flesh.png" title="Rotten Flesh"> | <img src="src/main/resources/assets/tellurite/textures/item/telumite_nodule.png" title="Telumite Nodule"> | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/rotten_flesh.png" title="Rotten Flesh"> |
 | | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20/assets/minecraft/textures/item/red_dye.png" title="Red Dye"> | |
 
-**➡ Yields:** <img src="src/main/resources/assets/catalyze_mod/textures/item/blood_reaper_catalyst.png" align="top"> **Blood Reaper Catalyst**
+**➡ Yields:** <img src="src/main/resources/assets/tellurite/textures/item/blood_reaper_inductor.png" align="top"> **Blood Reaper Telucite Inductor**
 ### Custom Weapons
 
 | Item | Class | Stats | Recipe | Mechanics |
 |---|---|---|---|---|
-| `netherite_scythe` | `NetheriteScytheItem extends SwordItem` | Netherite tier, +5.5 ATK, -2.7 ATK SPD | 2 Netherite Ingots + 3 Sticks (shaped) | Can be augmented to fire `blood_projectile` if it has the `blood_reaper` catalyst across a 20s cooldown. |
+| `netherite_scythe` | `NetheriteScytheItem extends SwordItem` | Netherite tier, +5.5 ATK, -2.7 ATK SPD | 2 Netherite Ingots + 3 Sticks (shaped) | Can be augmented to fire `blood_projectile` if it has the `blood_reaper` inductor across a 20s cooldown. |
 | `blood_projectile_debug` | `BloodProjectileDebugItem` | N/A | None (Debug Only) | Right-click to manually spawn a testing Blood Projectile. |
 
 ---
@@ -158,7 +162,7 @@ Below are the exact 3x3 crafting grid layouts needed to forge each catalyst. All
 ## Entities & Projectiles
 
 ### `blood_projectile`
-A custom high-performance projectile designed for precision and visual clarity, primarily used by the **Netherite Scythe** when combined with the **Blood Reaper** catalyst (20-second active cooldown via generic Minecraft item cooling).
+A custom high-performance projectile designed for precision and visual clarity, primarily used by the **Netherite Scythe** when combined with the **Blood Reaper** inductor (20-second active cooldown via generic Minecraft item cooling).
 
 - **Movement & Physics**:
   - **Speed**: Optimized to **15 blocks/s** (0.75 blocks/tick).
@@ -177,19 +181,19 @@ A custom high-performance projectile designed for precision and visual clarity, 
 
 ---
 
-## The Catalyst System
+## The Telucite Inductor System
 
 ### How It Works
 
-1. **Crafting**: Unique component modifiers are constructed using a `Dormant Catalyst` wrapped in specified target ingredients along a 3x3 table.
-2. **Recipe**: A custom `CatalystSmithingRecipe` (extends `SmithingTransformRecipe`) is then used at the smithing table with a **Template + Weapon/Tool + Catalyst**.
-3. **Assembly**: The recipe's `assemble()` method copies the base item and writes a boolean NBT flag into `CustomData` under the `catalyze_mod` compound key, e.g.:
+1. **Crafting**: Unique component modifiers are constructed using a `Telumite Nodule` wrapped in specified target ingredients along a 3x3 table.
+2. **Recipe**: A custom `TelluriteSmithingRecipe` (extends `SmithingTransformRecipe`) is then used at the smithing table with a **Template + Weapon/Tool + Telucite Inductor**.
+3. **Assembly**: The recipe's `assemble()` method copies the base item and writes a boolean NBT flag into `CustomData` under the `tellurite` compound key, e.g.:
    ```json
-   { "catalyze_mod": { "blazing": true } }
+   { "tellurite": { "blazing": true } }
    ```
 4. **Effect Trigger**: On hit (or on right-click for special mechanics like the Scythe), Mixins and item overriding methods check these native flags to trigger the requested logic.
 
-A catalyst **overwrites** any previous catalyst data (only one catalyst per item at a time).
+A inductor **overwrites** any previous inductor data (only one inductor per item at a time).
 
 ---
 
@@ -216,9 +220,9 @@ A fully custom `MobEffect` with **scaling damage and speed**.
 - **Tick interval formula**: `60 / 1.5^amplifier` — higher levels deal damage faster
 - **Immune entities** (hardcoded + tag-driven):
   - Iron Golem, Snow Golem, Shulker, Blaze, Breeze, Magma Cube, Slime, Guardian, Elder Guardian, Vex, Allay
-  - Plus any entity tagged with `catalyze_mod:immune_to_bleeding`
+  - Plus any entity tagged with `tellurite:immune_to_bleeding`
 
-### Serrated Catalyst — Armor Scaling
+### Serrated Telucite Inductor — Armor Scaling
 The `serrated` effect has a **bonus chance** to upgrade Bleeding to Level 2, reduced by the target's armor:
 
 | Armor Pieces | Bonus Chance |
@@ -257,13 +261,13 @@ A robust foundation for adding unique audio dynamically.
 
 ## Tooltip System
 
-Items with any active catalyst show animated tooltips:
+Items with any active inductor show animated tooltips:
 - **Default**: Shows a shimmering gold "**(Hold Shift)**" hint
-- **Shift-held**: Shows each active catalyst's name with a **color-specific animated gradient**
+- **Shift-held**: Shows each active inductor's name with a **color-specific animated gradient**
 
 Gradient color palettes:
 
-| Catalyst | Gradient Colors |
+| Telucite Inductor | Gradient Colors |
 |---|---|
 | Blazing | 🟠 Orange → Red → Gold |
 | Freezing | 🔵 White → Ice Blue → Teal |
@@ -280,10 +284,10 @@ Gradient color palettes:
 
 ## Datagen & Crafting Codec
 
-All crafting shapes and catalyst smithing recipes are handled programmatically via `ModRecipeProvider`:
-- `addCatalystCraftingRecipes()` & `ShapedRecipeBuilder` — Constructs central `dormant_catalyst` recipes directly into game memory without static definitions.
-- `addCatalystRecipes()` — Loops over all targeted weapon models and binds templates directly.
-- Recipe IDs follow standard forge taxonomy: `catalyze_mod:<prefix>_<item_path>`
+All crafting shapes and inductor smithing recipes are handled programmatically via `ModRecipeProvider`:
+- `addInductorCraftingRecipes()` & `ShapedRecipeBuilder` — Constructs central `telumite_nodule` recipes directly into game memory without static definitions.
+- `addInductorRecipes()` — Loops over all targeted weapon models and binds templates directly.
+- Recipe IDs follow standard forge taxonomy: `tellurite:<prefix>_<item_path>`
 
 ---
 
@@ -291,19 +295,19 @@ All crafting shapes and catalyst smithing recipes are handled programmatically v
 
 | Item | Status |
 |---|---|
-| `throat_slit_catalyst` | Registered, no recipe or effect |
-| `tether_catalyst` | Registered, no recipe or effect |
-| `shattering_catalyst` | Registered, no recipe or effect |
-| All Armor Catalysts | Registered, no recipes or effects |
-| `haste_catalyst` | Registered, recipe exists, tooltip exists, but in-game haste effect not applied |
+| `throat_slit_inductor` | Registered, no recipe or effect |
+| `tether_inductor` | Registered, no recipe or effect |
+| `shattering_inductor` | Registered, no recipe or effect |
+| All Armor Telucite Inductors | Registered, no recipes or effects |
+| `haste_inductor` | Registered, recipe exists, tooltip exists, but in-game haste effect not applied |
 | `blocks` package | Empty directory, no custom blocks defined |
 | `event` package | Listed but appears empty |
 
 ---
 
-## Adding a New Catalyst — Developer Guide
+## Adding a New Telucite Inductor — Developer Guide
 
-Every catalyst follows the same 5-step pattern. Here's a complete walkthrough using a hypothetical **Shocking Catalyst** as an example.
+Every inductor follows the same 5-step pattern. Here's a complete walkthrough using a hypothetical **Shocking Telucite Inductor** as an example.
 
 ---
 
@@ -312,8 +316,8 @@ Every catalyst follows the same 5-step pattern. Here's a complete walkthrough us
 Add a `DeferredItem` entry in the appropriate category block:
 
 ```java
-// Weapon Catalysts
-public static final DeferredItem<Item> SHOCKING_CATALYST = ITEMS.register("shocking_catalyst",
+// Weapon Telucite Inductors
+public static final DeferredItem<Item> SHOCKING_INDUCTOR = ITEMS.register("shocking_inductor",
         () -> new Item(new Item.Properties()));
 ```
 
@@ -329,26 +333,26 @@ Choose a template based on scope:
 
 **Option A — Standard combat weapon coverage** (swords, axes, scythe, trident, mace):
 
-Add your catalyst to the `buildRecipes()` call to `addCatalystRecipes()`:
+Add your inductor to the `buildRecipes()` call to `addInductorRecipes()`:
 
 ```java
-addCatalystRecipes(recipeOutput, ModItems.COMBAT_TEMPLATE.get(),
-        ModItems.SHOCKING_CATALYST.get(), "shocking");
+addInductorRecipes(recipeOutput, ModItems.COMBAT_TEMPLATE.get(),
+        ModItems.SHOCKING_INDUCTOR.get(), "shocking");
 ```
 
-This automatically generates smithing recipes for every sword tier, axe tier, the Netherite Scythe, trident, and mace. The recipe ID will be `catalyze_mod:shocking_<item_path>`.
+This automatically generates smithing recipes for every sword tier, axe tier, the Netherite Scythe, trident, and mace. The recipe ID will be `tellurite:shocking_<item_path>`.
 
 **Option B — Specific weapon only** (like Blood Reaper or Piercing):
 
-Call `catalystSmithing()` directly with the exact base item:
+Call `inductorSmithing()` directly with the exact base item:
 
 ```java
-catalystSmithing(recipeOutput,
+inductorSmithing(recipeOutput,
         ModItems.SPECIAL_TEMPLATE.get(),   // template
         Items.BOW,                          // base item
-        ModItems.SHOCKING_CATALYST.get(),   // catalyst
+        ModItems.SHOCKING_INDUCTOR.get(),   // inductor
         Items.BOW,                          // result (same item)
-        "shocking_catalyst_bow");           // unique recipe ID
+        "shocking_inductor_bow");           // unique recipe ID
 ```
 
 > ⚠️ The result item is the **same as the base** — the recipe copies the item and writes NBT data; it does not create a new item type.
@@ -382,20 +386,20 @@ if (stack.getItem() instanceof NetheriteScytheItem) {
 }
 ```
 
-> The NBT key **must exactly match** the string used in `CatalystSmithingRecipe.assemble()` (Step 4).
+> The NBT key **must exactly match** the string used in `TelluriteSmithingRecipe.assemble()` (Step 4).
 
 ---
 
-### Step 4 — Wire Up the NBT Tag (`CatalystSmithingRecipe.java`)
+### Step 4 — Wire Up the NBT Tag (`TelluriteSmithingRecipe.java`)
 
-In `assemble()`, add an `else if` branch mapping your catalyst item to your NBT key string:
+In `assemble()`, add an `else if` branch mapping your inductor item to your NBT key string:
 
 ```java
-else if (addition.is(ModItems.SHOCKING_CATALYST.get()))
+else if (addition.is(ModItems.SHOCKING_INDUCTOR.get()))
     tagKey = "shocking";
 ```
 
-This is the bridge between the smithing recipe and the runtime effect — when the player crafts the upgrade, the item receives `{ "catalyze_mod": { "shocking": true } }`.
+This is the bridge between the smithing recipe and the runtime effect — when the player crafts the upgrade, the item receives `{ "tellurite": { "shocking": true } }`.
 
 ---
 
@@ -410,10 +414,10 @@ case "shocking" -> new int[] { 0xFFFF00, 0xFFD700, 0xFFF5B2 }; // Yellow → Gol
 Then add a translation key to your lang file (`en_us.json`):
 
 ```json
-"tooltip.catalyze_mod.shocking": "⚡ Shocking\nStrikes targets with lightning on hit."
+"tooltip.tellurite.shocking": "⚡ Shocking\nStrikes targets with lightning on hit."
 ```
 
-The tooltip automatically shows when the player holds **Shift** while hovering over a catalyzed item. Multi-line tooltips are supported using `\n`.
+The tooltip automatically shows when the player holds **Shift** while hovering over a tellurized item. Multi-line tooltips are supported using `\n`.
 
 ---
 
@@ -422,9 +426,9 @@ The tooltip automatically shows when the player holds **Shift** while hovering o
 | Step | File | What to do |
 |---|---|---|
 | 1 | `ModItems.java` | Register `DeferredItem` |
-| 2 | `ModRecipeProvider.java` | Call `addCatalystRecipes()` or `catalystSmithing()` |
+| 2 | `ModRecipeProvider.java` | Call `addInductorRecipes()` or `inductorSmithing()` |
 | 3 | Mixin file(s) | Add `modTag.getBoolean("your_key")` check |
-| 4 | `CatalystSmithingRecipe.java` | Add `else if` for your item → tag key mapping |
+| 4 | `TelluriteSmithingRecipe.java` | Add `else if` for your item → tag key mapping |
 | 5 | `ModClientEvents.java` + `en_us.json` | Add gradient colors and translation string |
 
 ---
@@ -432,7 +436,7 @@ The tooltip automatically shows when the player holds **Shift** while hovering o
 ## Architecture Summary
 
 ```
-Catalyze_mod (main entry)
+Tellurite (main entry)
 ├── ModItems       — All item registrations
 ├── ModRecipes     — Custom recipe type + serializer
 ├── ModEffects     — Bleeding effect
@@ -445,10 +449,10 @@ Catalyze_mod (main entry)
 │   └── ModGlobalLootModifierProvider
 │
 ├── mixins/
-│   ├── SwordItemMixin       — Sword + Scythe catalyst effects
-│   ├── DiggerItemMixin      — Axe catalyst effects
-│   ├── MaceItemMixin        — Mace catalyst effects
-│   ├── TridentItemMixin     — Trident melee catalyst effects
+│   ├── SwordItemMixin       — Sword + Scythe inductor effects
+│   ├── DiggerItemMixin      — Axe inductor effects
+│   ├── MaceItemMixin        — Mace inductor effects
+│   ├── TridentItemMixin     — Trident melee inductor effects
 │   ├── ThrownTridentMixin   — Thrown trident (piercing + channeling)
 │   ├── LivingEntityMixin    — (Registered in mixins.json)
 │   ├── MobEffectInstanceMixin — (Registered in mixins.json)
@@ -466,3 +470,4 @@ Catalyze_mod (main entry)
     ├── ModTags              — Entity type tags (immune_to_bleeding)
     └── ModKeyBindings       — (Registered, purpose TBD)
 ```
+

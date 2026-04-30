@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_telumite_nodule": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tellurite:telumite_nodule"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tellurite:blood_reaper_inductor"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_telumite_nodule"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tellurite:blood_reaper_inductor"
+    ]
+  }
+}

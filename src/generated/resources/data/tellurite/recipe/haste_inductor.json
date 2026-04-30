@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "!": {
+      "item": "tellurite:telumite_nodule"
+    },
+    "#": {
+      "item": "minecraft:golden_carrot"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#!#",
+    " # "
+  ],
+  "result": {
+    "count": 1,
+    "id": "tellurite:haste_inductor"
+  }
+}

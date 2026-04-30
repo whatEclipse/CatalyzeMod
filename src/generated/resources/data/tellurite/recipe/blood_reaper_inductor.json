@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "!": {
+      "item": "tellurite:telumite_nodule"
+    },
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "+": {
+      "item": "minecraft:red_dye"
+    },
+    "-": {
+      "item": "minecraft:rotten_flesh"
+    }
+  },
+  "pattern": [
+    " # ",
+    "-!-",
+    " + "
+  ],
+  "result": {
+    "count": 1,
+    "id": "tellurite:blood_reaper_inductor"
+  }
+}

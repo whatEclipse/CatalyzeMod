@@ -1,0 +1,16 @@
+{
+  "type": "tellurite:inductor_smithing",
+  "addition": {
+    "item": "tellurite:blood_reaper_inductor"
+  },
+  "base": {
+    "item": "tellurite:netherite_scythe"
+  },
+  "result": {
+    "count": 1,
+    "id": "tellurite:netherite_scythe"
+  },
+  "template": {
+    "item": "tellurite:special_template"
+  }
+}

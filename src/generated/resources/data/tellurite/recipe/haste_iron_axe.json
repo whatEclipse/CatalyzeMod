@@ -1,0 +1,16 @@
+{
+  "type": "tellurite:inductor_smithing",
+  "addition": {
+    "item": "tellurite:haste_inductor"
+  },
+  "base": {
+    "item": "minecraft:iron_axe"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:iron_axe"
+  },
+  "template": {
+    "item": "tellurite:tool_template"
+  }
+}

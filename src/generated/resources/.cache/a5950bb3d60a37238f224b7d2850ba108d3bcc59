@@ -1,0 +1,4 @@
+// 1.21.1	2026-04-30T22:36:59.486053	Global Loot Modifiers : tellurite
+194429ddf05c8a91046769c2a775c1af23b6b3c6 data/neoforge/loot_modifiers/global_loot_modifiers.json
+9801f1d783cf6647ade40c6e4026f58cf5683326 data/tellurite/loot_modifiers/add_guaranteed_telumite_nodule_to_portal_chest.json
+75407481787ce91de011cd897736e8c370b53e5c data/tellurite/loot_modifiers/add_telumite_nodule_to_ancient_city.json

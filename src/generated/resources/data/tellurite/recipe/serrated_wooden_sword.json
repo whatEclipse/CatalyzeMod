@@ -1,0 +1,16 @@
+{
+  "type": "tellurite:inductor_smithing",
+  "addition": {
+    "item": "tellurite:serrated_inductor"
+  },
+  "base": {
+    "item": "minecraft:wooden_sword"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:wooden_sword"
+  },
+  "template": {
+    "item": "tellurite:combat_template"
+  }
+}

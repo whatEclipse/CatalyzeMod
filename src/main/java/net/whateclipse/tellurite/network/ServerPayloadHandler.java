@@ -1,0 +1,52 @@
+package net.whateclipse.tellurite.network;
+
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.component.CustomData;
+import net.neoforged.neoforge.network.handling.IPayloadContext;
+import net.whateclipse.tellurite.network.packet.HasteAbilityPayload;
+
+public class ServerPayloadHandler {
+    public static void handleHasteAbility(HasteAbilityPayload payload, IPayloadContext context) {
+        context.enqueueWork(() -> {
+            if (context.player() instanceof ServerPlayer player) {
+                ItemStack mainHandItem = player.getMainHandItem();
+                CustomData customData = mainHandItem.get(DataComponents.CUSTOM_DATA);
+
+                if (customData != null && customData.contains("tellurite")) {
+                    net.minecraft.nbt.CompoundTag modTag = customData.copyTag().getCompound("tellurite");
+                    if (modTag.getBoolean("haste")) {
+                        long currentTime = player.level().getGameTime();
+                        long cooldownEnd = modTag.getLong("haste_cooldown_end");
+
+                        if (currentTime >= cooldownEnd) {
+                            // Apply Haste 3 for 20 seconds
+                            player.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 400, 2));
+
+                            // Set Cooldown 2 minutes
+                            modTag.putLong("haste_cooldown_end", currentTime + 2400);
+
+                            // Update Item NBT
+                            net.minecraft.nbt.CompoundTag rootTag = customData.copyTag();
+                            rootTag.put("tellurite", modTag);
+                            CustomData newCustomData = CustomData.of(rootTag);
+                            mainHandItem.set(DataComponents.CUSTOM_DATA, newCustomData);
+
+                            player.displayClientMessage(Component.translatable("message.tellurite.haste_activated"),
+                                    true);
+                        } else {
+                            long remainingSeconds = (cooldownEnd - currentTime) / 20;
+                            player.displayClientMessage(
+                                    Component.translatable("message.tellurite.haste_cooldown", remainingSeconds),
+                                    true);
+                        }
+                    }
+                }
+            }
+        });
+    }
+}
